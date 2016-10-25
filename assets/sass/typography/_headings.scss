@@ -1,0 +1,18 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+
+.entry-content h1 {
+	font-size: 37px;
+	color: $color-dark-gray;
+}
+h1.entry-title {
+	font-size: 37px;
+	color: $color-dark-gray;
+}
+.entry-content {
+	p {
+		font-size: 24px;
+		color: $color-dark-gray;
+	}
+}

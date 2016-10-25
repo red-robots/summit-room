@@ -1,0 +1,70 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+section.hero {
+	width: 100%;
+	float: left;
+	.hero-text {
+		color: #fff;
+		width: 90%;
+		margin: 10% auto 30% auto;
+		text-align: center;
+		line-height: 1.2;
+		background-color: rgba(0,0,0,.5);
+		font: {
+			size: 37px;
+		}
+		@media screen and (min-width: $tabwidth) {
+			width: 80%;
+			background-color: rgba(0,0,0,.0);
+		}
+		@media screen and (min-width: $deskwidth) {
+			width: 50%;
+		}
+	}
+}
+.smenu-item {
+	width: 20%;
+	display: inline-block;
+	margin: 2%;
+	position: relative;
+
+	.menu-image {
+		border: 1px solid $color-dark-gray;
+		float: left;
+		line-height: 0;
+		img {
+			width: 100%;
+		}
+	}
+}
+.menu-top-button {
+	width: 100%;
+	float: left;
+	padding: 20px 0;
+}

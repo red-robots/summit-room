@@ -1,0 +1,211 @@
+.main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin: 20px 0;
+
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 1.5em;
+			left: -999em;
+			z-index: 99999;
+
+			ul {
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
+
+			a {
+				width: 200px;
+			}
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+	li {
+		display: inline-block;
+		position: relative;
+		text-transform: uppercase;
+		width: 100%;
+		margin: 10px auto;
+		font: {
+			size: 22px;
+		}
+		@media screen and (min-width: $smallwidth) {
+			font-size: 16px;
+		}
+		@media screen and (min-width: $tabwidth) {
+			width: auto;
+			margin: 0px 8px 0 8px;
+			font-size: 15px;
+		}
+		@media screen and (min-width: $midwidth) {
+			font-size: 18px;
+			margin: 0px 20px 0 20px;
+		}
+		@media screen and (min-width: $deskwidth) {
+			font-size: 22px;
+		}
+		@media screen and (min-width: $largewidth) {
+			font-size: 22px;
+		}
+
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+	a {
+		display: block;
+		text-decoration: none;
+		color: $color-dark-gray;
+	}
+	li.mobile {
+
+		@media screen and (min-width: $tabwidth) {
+			display: none;
+		}
+	}
+	li.logo , h1.logo {
+		width: 180px;
+		height: 143px;
+		display: none;
+		
+		background: {
+			image: url(images/logo.png);
+			repeat: no-repeat;
+			size: cover;
+		}
+		margin: 10px auto;
+
+		@media screen and (min-width: $tabwidth) {
+			width: 150px;
+			height: 119px;
+			margin: 0;
+			display: inline-block;
+		}
+		@media screen and (min-width: $deskwidth) {
+			width: 180px;
+			height: 143px;
+		}
+		a {
+			width: 180px;
+			height: 143px;
+			display: block;
+			text-indent: -9000px;
+			
+
+
+			@media screen and (min-width: $tabwidth) {
+				width: 150px;
+				height: 119px;
+				padding-top: 70px;
+			}
+			@media screen and (min-width: $deskwidth) {
+				width: 180px;
+				height: 143px;
+				padding-top: 80px;
+			}
+		}
+	}
+
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+	}
+}
+/* Logo */
+
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+	// background-color: $color-green;
+	ul.sub-menu {
+		background-color: rgba(255,255,255,.1);
+	}
+	
+}
+
+
+@media screen and (min-width: $tabwidth) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+button.menu-toggle {
+	border: 0px;
+	text-shadow: none;
+	background-color: $color-dark-gray;
+	color: #fff;
+	box-shadow: none;
+	width: auto;
+	display: inline-block;
+	margin: 10px auto;
+	border-radius: 0;
+	text-transform: uppercase;
+	padding: 10px 20px ;
+	font: {
+		
+		weight :300;
+		size: 20px;
+	}
+	
+	@media screen and (min-width: $tabwidth) {
+		display: none;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}
