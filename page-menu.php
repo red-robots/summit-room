@@ -58,7 +58,7 @@ get_header(); ?>
 
 							<div class="menu-top-button">
 								<div class="small-button">
-									<a href="<?php echo $dinner_menu_link; ?>">DINNER MENU</a>
+									<a href="<?php echo $dinner_menu_link; ?>">DOWNLOAD MENU</a>
 								</div>
 							</div>
 
