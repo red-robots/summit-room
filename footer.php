@@ -26,6 +26,7 @@ $mayobird_link = get_field('mayobird_link', 'option');
 $joe_nosh_link = get_field('joe_nosh_link', 'option');
 $packhouse_link = get_field('packhouse_link', 'option');
 
+$sitename = get_bloginfo('name');
 ?>
 
 	</div><!-- #content -->
@@ -36,7 +37,7 @@ $packhouse_link = get_field('packhouse_link', 'option');
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
-	<?php if( is_home() ) { ?>
+	<?php if( !is_page('request-a-reservation') ) { ?>
 		<div class="big-button">
 			<div class="small-button">
 				<a href="<?php bloginfo('url'); ?>/request-a-reservation">REQUEST A RESERVATION</a>
@@ -69,13 +70,13 @@ $packhouse_link = get_field('packhouse_link', 'option');
 				<div class="item">
 					<div class="social social-footer">
 						<li class="facebook">
-							<i class="fa fa-facebook-square" aria-hidden="true"><a href="<?php echo $facebook; ?>"></a></i>
+							<i class="fa fa-facebook" aria-hidden="true"><a href="<?php echo $facebook; ?>"></a></i>
 						</li>
 						<li class="facebook">
 							<i class="fa fa-instagram" aria-hidden="true"><a href="<?php echo $instgram; ?>"></a></i>
 						</li>
 						<li class="facebook">
-							<i class="fa fa-twitter-square" aria-hidden="true"><a href="<?php echo $twitter; ?>"></a></i>
+							<i class="fa fa-twitter" aria-hidden="true"><a href="<?php echo $twitter; ?>"></a></i>
 						</li>
 					</div>
 				</div>
@@ -128,6 +129,15 @@ $packhouse_link = get_field('packhouse_link', 'option');
 			</div>
 			
 		</div><!-- wrapper -->
+
+		<div class="creds">
+			<?php 
+
+			
+			echo $sitename . ' - <a href="'. $sitemap . '">sitemap</a> - site by <a target="_blank" href="http://bellaworksweb.com">Bellaworks</a>';
+			 ?>
+		</div>
+
 	</footer><!-- #colophon -->
 
 

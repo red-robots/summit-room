@@ -307,7 +307,7 @@ footer.site-footer {
 	margin: 0 auto 30px auto;
 	@media screen and (min-width: $tabwidth) {
 		width: 24%;
-		margin: 0;
+		margin: 5% 0 0 0;
 		float: left;
 	}
 	.img-summit {
@@ -407,7 +407,7 @@ section.header-info {
 		height: auto;
 		position: relative;
 		
-		font-size: 35px;
+		font-size: 25px;
 		transform: scale(1);
 		@include transition(all ease .3s);
 		&:hover {
@@ -425,6 +425,7 @@ section.header-info {
 	&.social-head {
 		@media screen and (min-width: $tabwidth) {
 			float: right;
+			margin-top: 8px;
 		}
 		i {
 			color: #fff;
@@ -498,5 +499,46 @@ section.header-info {
 			background-color: #fff;
 			color: $color-light-gray;
 		}
+	}
+}
+.site-footer .creds {
+	color: $color-light-gray;
+	width: 100%;
+	margin: 30px 0 10px 0;
+	float: left;
+	text-align: center;
+	font: {
+		size: 16px;
+		font-family: $font__main;
+	}
+	a {
+		color: $color-light-gray;
+		text-decoration: none;
+		@include transition(all ease .3s);
+
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+article.hentry {
+	padding-bottom: 80px;
+	@media screen and (min-width: $deskwidth) {
+		width: 70%;
+		margin: 0 auto;
+	}
+}
+.wp-caption {
+	width: auto;
+	position: relative;
+	.wp-caption-text {
+		width: 100%;
+		padding: 5px; 
+		background-color: rgba(0,0,0,.7);
+		color: #fff;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		margin: 0 !important;
 	}
 }
