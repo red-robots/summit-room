@@ -21,6 +21,11 @@ $facebook = get_field('facebook_link', 'option');
 $google_analytics = get_field('google_analytics', 'option');
 $sitemap = get_field('sitemap_link', 'option');
 
+$treehouse_kitchen_link = get_field('treehouse_kitchen_link', 'option');
+$mayobird_link = get_field('mayobird_link', 'option');
+$joe_nosh_link = get_field('joe_nosh_link', 'option');
+$packhouse_link = get_field('packhouse_link', 'option');
+
 ?>
 
 	</div><!-- #content -->
@@ -42,8 +47,24 @@ $sitemap = get_field('sitemap_link', 'option');
 			
 			<section class='footer-col-1 foot-col'>
 				<div class="item">
+					<h3>COME SEE US</h3>
+					<?php echo $address; ?>
+				</div>
+			</section>
+
+			<section class='footer-col-2 foot-col'>
+				<div class="item">
 					<h3>HOURS</h3>
 					<?php echo $hours; ?>
+				</div>
+			</section>
+
+			<section class='footer-col-3 foot-col'>
+				<div class="item">
+					<h3>WE CATER! GIVE US A CALL</h3>
+					<?php echo '(p) ' . $phone; ?>
+					<br>
+					<?php echo '(e) <a href="'. $spam . '">' . $spam . '</a>'; ?>
 				</div>
 				<div class="item">
 					<div class="social social-footer">
@@ -57,25 +78,10 @@ $sitemap = get_field('sitemap_link', 'option');
 							<i class="fa fa-twitter-square" aria-hidden="true"><a href="<?php echo $twitter; ?>"></a></i>
 						</li>
 					</div>
-					
 				</div>
 			</section>
 
-			<section class='footer-col-2 foot-col'>
-				<div class="item">
-					<h3>COME SEE US</h3>
-					<?php echo $address; ?>
-				</div>
-				<div class="item">
-					<h3>WE CATER! GIVE US A CALL</h3>
-					<?php echo '(p) ' . $phone; ?>
-					<br>
-					<?php echo '(e) <a href="'. $spam . '">' . $spam . '</a>'; ?>
-				</div>
-				
-			</section>
-
-			<section class='footer-col-3 foot-col'>
+			<section class='footer-col-4 foot-col'>
 				<h3 class="center">WE PROUDLY SUPPORT</h3>
 				<div class="behailu">
 					<a target="_blank" href="http://www.behailuacademy.org/">
@@ -93,7 +99,7 @@ $sitemap = get_field('sitemap_link', 'option');
 				<div class="img-center">
 					<h3 class="center">A PART OF</h3>
 					<div class="rollover">
-						<a href="#">
+						<a href="<?php echo $treehouse_kitchen_link; ?>">
 							<img alt="Tree House Kitchen" title="Tree House Kitchen" src="<?php bloginfo('template_url'); ?>/images/tree-house-kitchen.png">
 						</a>
 					</div><!-- roll over -->
@@ -101,21 +107,21 @@ $sitemap = get_field('sitemap_link', 'option');
 			</section>
 			<div class="group-item ">
 				<div class="img-joe rollover">
-					<a href="#">
+					<a href="<?php echo $joe_nosh_link; ?>">
 						<img alt="Joe and Nosh" title="Joe and Nosh" src="<?php bloginfo('template_url'); ?>/images/joe-and-nosh.png">
 					</a>
 				</div>
 			</div>
 			<div class="group-item ">
 				<div class="img-packhouse rollover">
-					<a href="#">
+					<a href="<?php echo $packhouse_link; ?>">
 						<img alt="Packhouse" title="Packhouse" src="<?php bloginfo('template_url'); ?>/images/packhouse.png">
 					</a>
 				</div>
 			</div>
 			<div class="group-item ">
 				<div class="img-mayo rollover">
-					<a href="#">
+					<a href="<?php echo $mayobird_link; ?>">
 						<img alt="Mayobird" title="Mayobird" src="<?php bloginfo('template_url'); ?>/images/mayobird.png">
 					</a>
 				</div>

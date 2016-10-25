@@ -42,13 +42,13 @@ $facebook = get_field('facebook_link', 'option');
 			<div class="social social-head">
 				<ul>
 					<li class="facebook">
-						<i class="fa fa-facebook-square" aria-hidden="true"><a href="<?php echo $facebook; ?>"></a></i>
+						<i class="fa fa-facebook-square" aria-hidden="true"><a target="_blank" href="<?php echo $facebook; ?>"></a></i>
 					</li>
 					<li class="facebook">
-						<i class="fa fa-instagram" aria-hidden="true"><a href="<?php echo $instgram; ?>"></a></i>
+						<i class="fa fa-instagram" aria-hidden="true"><a target="_blank" href="<?php echo $instagram; ?>"></a></i>
 					</li>
 					<li class="facebook">
-						<i class="fa fa-twitter-square" aria-hidden="true"><a href="<?php echo $twitter; ?>"></a></i>
+						<i class="fa fa-twitter-square" aria-hidden="true"><a target="_blank" href="<?php echo $twitter; ?>"></a></i>
 					</li>
 				</ul>
 			</div>

@@ -16,6 +16,10 @@ get_header(); ?>
 				$drinkMenu = get_field('drink_menu');
 				$dinnerimage = get_field('dinner_menu_image');
 				$drinkimage = get_field('drink_menu_image');
+				$drink_menu_link = get_field('drink_menu_link');
+				$dinner_menu_link = get_field('dinner_menu_link');
+				$menu_pdf = get_field('menu_pdf');
+				$menu_picture = get_field('menu_picture');
 				$size = 'full'; // (thumbnail, medium, large, full or custom size)
 
 
@@ -30,24 +34,37 @@ get_header(); ?>
 						<?php the_content(); ?>
 
 
-						<div class="smenu-item">
-							<div class="menu-top-button">
-								<div class="small-button">
-								<a href="<?php echo $dinnerMenu; ?>">DINNER MENU</a>
+						<?php if(is_page('menus')) : ?>
+							<div class="smenu-item">
+								<div class="menu-top-button">
+									<div class="small-button">
+										<a href="<?php echo $dinner_menu_link; ?>">DINNER MENU</a>
+									</div>
 								</div>
+								<div class="menu-image"><?php echo wp_get_attachment_image( $dinnerimage, $size ); ?></div>
 							</div>
-							<div class="menu-image"><?php echo wp_get_attachment_image( $dinnerimage, $size ); ?></div>
-						</div>
 
-						<div class="smenu-item">
+							<div class="smenu-item">
+								<div class="menu-top-button">
+									<div class="small-button">
+										<a href="<?php echo $drink_menu_link; ?>">DRINK MENU</a>
+									</div>
+								</div>
+								<div class="menu-image"><?php echo wp_get_attachment_image( $drinkimage, $size ); ?></div>
+								
+							</div>
+
+						<?php else: ?>
+
 							<div class="menu-top-button">
 								<div class="small-button">
-								<a href="<?php echo $drinkMenu; ?>">DRINK MENU</a>
+									<a href="<?php echo $dinner_menu_link; ?>">DINNER MENU</a>
 								</div>
 							</div>
-							<div class="menu-image"><?php echo wp_get_attachment_image( $drinkimage, $size ); ?></div>
-							
-						</div>
+
+							<div class="menu-image"><?php echo wp_get_attachment_image( $menu_picture, $size ); ?></div>
+
+						<?php endif; ?>
 
 					</div><!-- .entry-content -->
 
