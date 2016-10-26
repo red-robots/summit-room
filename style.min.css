@@ -1238,7 +1238,7 @@ button:focus{outline:0}
 body,button,input,select,textarea{color:#404040;font-family:"News Cycle",sans-serif;font-size:16px;font-size:1rem;line-height:1.5}
 h1,h2,h3,h4,h5,h6{clear:both}
 .entry-content h1{font-size:34px;color:#10181f}
-h1.entry-title{font-size:34px;color:#10181f;text-transform:uppercase}
+h1.entry-title{font-size:34px;color:#10181f;text-transform:uppercase;width:100%;text-align:center}
 .entry-content p{font-size:20px;color:#10181f}
 p{margin-bottom:1.5em}
 dfn,cite,em,i{font-style:italic}
@@ -1504,7 +1504,7 @@ section.header-info{width:100%;position:relative;text-align:center;margin:20px a
 .site-footer .creds a:hover{color:#fff}
 article.hentry{padding-bottom:80px}
 @media screen and (min-width:1200px){article.hentry{width:70%;margin:0 auto}
-}.menu-article{padding-bottom:80px}
+}.menu-article{padding-bottom:80px;text-align:center}
 .wp-caption{width:auto !important;position:relative}
 .wp-caption .wp-caption-text{width:100%;padding:5px;background-color:rgba(0,0,0,0.7);color:#fff;position:absolute;bottom:0;left:0;margin:0 !important}
 .sticky{display:block}
