@@ -41,7 +41,9 @@ get_header(); ?>
 					             
 					                     <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
 					            
+					            <?php if($image['caption'] != '') { ?>
 					                <div class="caption"><?php echo $image['caption']; ?></div>
+					                <?php } ?>
 					           </div>
 					        <?php endforeach; ?>
 					 
@@ -49,7 +51,7 @@ get_header(); ?>
 
 					</article><!-- #post-## -->
 
-					
+
 				<?php endwhile; // End of the loop.
 				?>
 
