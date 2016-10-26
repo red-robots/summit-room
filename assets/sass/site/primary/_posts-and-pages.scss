@@ -86,6 +86,7 @@ section.hero {
 .gal {
 	width: 100%;
 	float: left;
+	line-height: 0;
 	
 	position: relative;
 	@media screen and (min-width: $tabwidth) {
@@ -117,5 +118,6 @@ section.hero {
 		left: 0;
 		margin: 0 !important;
 		text-align: center;
+		line-height: 1;
 	}
 }
