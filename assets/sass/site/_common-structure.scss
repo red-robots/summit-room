@@ -195,6 +195,7 @@ footer.site-footer {
 		width: 100%;
 		float: left;
 		margin: 0 0 20px 0;
+		font-size: 21px;
 	}
 	a {
 		color: #fff;
@@ -470,7 +471,7 @@ section.header-info {
 	}
 }
 .big-button {
-	padding: 50px 0;
+	padding: 70px 0;
 	width: 90%;
 	@media screen and (min-width: $tabwidth) {
 		width: 60%;
@@ -532,7 +533,7 @@ article.hentry {
 	padding-bottom: 80px;
 }
 .wp-caption {
-	width: auto;
+	width: auto !important;
 	position: relative;
 	.wp-caption-text {
 		width: 100%;

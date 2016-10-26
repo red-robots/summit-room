@@ -20,6 +20,7 @@ get_header(); ?>
 				$dinner_menu_link = get_field('dinner_menu_link');
 				$menu_pdf = get_field('menu_pdf');
 				$menu_picture = get_field('menu_picture');
+				$extra_menu_image = get_field('extra_menu_image');
 				$size = 'full'; // (thumbnail, medium, large, full or custom size)
 
 
@@ -58,11 +59,14 @@ get_header(); ?>
 
 							<div class="menu-top-button-page">
 								<div class="small-button">
-									<a href="<?php echo $dinner_menu_link; ?>">DOWNLOAD MENU</a>
+									<a href="<?php echo $menu_pdf; ?>">DOWNLOAD MENU</a>
 								</div>
 							</div>
 
 							<div class="menu-image"><?php echo wp_get_attachment_image( $menu_picture, $size ); ?></div>
+							<?php if($extra_menu_image != '') { ?>
+								<div class="menu-image"><?php echo wp_get_attachment_image( $menu_picture, $size ); ?></div>
+							<?php } ?>
 
 						<?php endif; ?>
 

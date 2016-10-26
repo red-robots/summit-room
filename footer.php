@@ -62,7 +62,7 @@ $sitename = get_bloginfo('name');
 
 			<section class='footer-col-3 foot-col'>
 				<div class="item">
-					<h3>WE CATER! GIVE US A CALL</h3>
+					<h3>CONTACT</h3>
 					<?php echo '(p) ' . $phone; ?>
 					<br>
 					<?php echo '(e) <a href="'. $spam . '">' . $spam . '</a>'; ?>
