@@ -1409,7 +1409,7 @@ div{-ms-hyphens:auto;-moz-hyphens:auto;-webkit-hyphens:auto;hyphens:auto}
 }#page{width:100%;float:left;background-image:url(images/summit-room.jpg);background-repeat:no-repeat}
 @media screen and (min-width:600px){#page{background-size:cover}
 }.site-content{width:100%;float:left}
-.page-contents{background-color:#fff;overflow:hidden;margin:0;width:100%;float:left;text-align:center;padding-bottom:80px}
+.page-contents{background-color:#fff;overflow:hidden;margin:0;width:100%;float:left;text-align:left;padding-bottom:80px}
 .homepage{min-height:500px}
 .content-area{width:100%;margin:0 auto}
 @media screen and (min-width:600px){.content-area{width:66%;float:left;margin:0}
@@ -1524,7 +1524,14 @@ section.hero .hero-text{color:#fff;width:90%;margin:10% auto 30% auto;text-align
 .smenu-item .menu-image img{width:100%}
 .menu-top-button{width:100%;float:left;padding:20px 0}
 .menu-top-button-page{width:auto;padding:20px 0}
-.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
+.gal{width:100%;float:left;position:relative}
+@media screen and (min-width:600px){.gal{width:45%}
+}.gal img{width:100%}
+.gal.first{margin:0 0 10px 0}
+@media screen and (min-width:600px){.gal.first{margin:0 9% 20px 0}
+}.gal.last{margin:0 0 10px 0}
+@media screen and (min-width:600px){.gal.last{margin:0 0 20px 0}
+}.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
 .infinite-scroll .posts-navigation,.infinite-scroll.neverending .site-footer{display:none}

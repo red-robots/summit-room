@@ -83,3 +83,28 @@ section.hero {
 	width: auto;
 	padding: 20px 0;
 }
+.gal {
+	width: 100%;
+	float: left;
+	
+	position: relative;
+	@media screen and (min-width: $tabwidth) {
+		width: 45%;
+	}
+
+	img {
+		width: 100%;
+	}
+	&.first {
+		margin: 0 0 10px 0;
+		@media screen and (min-width: $tabwidth) {
+			margin: 0 9% 20px 0;
+		}
+	}
+	&.last {
+		margin: 0 0 10px 0;
+		@media screen and (min-width: $tabwidth) {
+			margin: 0 0% 20px 0;
+		}
+	}
+}
