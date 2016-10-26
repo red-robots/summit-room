@@ -19,7 +19,7 @@ get_header(); ?>
 
 					<div class="entry-content">
 						<?php the_content(); ?>
-				</article><!-- #post-## -->
+				
 
 				<?php 
 
@@ -46,6 +46,10 @@ get_header(); ?>
 					        <?php endforeach; ?>
 					 
 					<?php endif; ?>
+
+					</article><!-- #post-## -->
+
+					
 				<?php endwhile; // End of the loop.
 				?>
 
