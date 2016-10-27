@@ -5,13 +5,20 @@ div {
 	/* This is the dangerous one in WebKit, as it breaks things wherever */
 	
 	/* Instead use this non-standard one: */
-	
+	overflow-wrap: keep-word;
+	word-wrap: keep-word;
+
+	-ms-word-break: keep-all;
+	/* This is the dangerous one in WebKit, as it breaks things wherever */
+	word-break: keep-all;
+	/* Instead use this non-standard one: */
+	word-break: keep-word;
 
 	/* Adds a hyphen where the word breaks, if supported (No Blink) */
-	-ms-hyphens: auto;
-	-moz-hyphens: auto;
-	-webkit-hyphens: auto;
-	hyphens: auto;
+	-ms-hyphens: none;
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
+	hyphens: none;
 }
 .clear {clear: both;}
 .wrapper {
@@ -36,7 +43,7 @@ div {
 	}
 
 	@media screen and (min-width: $tabwidth) {
-		background-size: cover;
+		background-size: contain;
 	}
 }
 .site-content {

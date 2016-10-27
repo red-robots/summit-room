@@ -65,7 +65,7 @@ get_header(); ?>
 
 							<div class="menu-image"><?php echo wp_get_attachment_image( $menu_picture, $size ); ?></div>
 							<?php if($extra_menu_image != '') { ?>
-								<div class="menu-image"><?php echo wp_get_attachment_image( $menu_picture, $size ); ?></div>
+								<div class="menu-image"><?php echo wp_get_attachment_image( $extra_menu_image, $size ); ?></div>
 							<?php } ?>
 
 						<?php endif; ?>

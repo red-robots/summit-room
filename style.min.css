@@ -1277,7 +1277,10 @@ a:hover,a:focus,a:active{color:midnightblue}
 a:focus{outline:thin dotted}
 a:hover,a:active{outline:0}
 .main-navigation{clear:both;display:block;float:left;width:100%;text-align:center;margin:20px 0}
-@media screen and (min-width:1200px){.main-navigation{width:92%}
+@media screen and (min-width:600px){.main-navigation{width:91%}
+}@media screen and (min-width:900px){.main-navigation{width:92%}
+}@media screen and (min-width:1200px){.main-navigation{width:94%}
+}@media screen and (min-width:1400px){.main-navigation{width:94%}
 }.main-navigation ul{display:none;list-style:none;margin:0;padding-left:0}
 .main-navigation ul ul{box-shadow:0 3px 3px rgba(0,0,0,0.2);float:left;position:absolute;top:1.5em;left:-999em;z-index:99999}
 .main-navigation ul ul ul{left:-999em;top:0}
@@ -1401,13 +1404,13 @@ html[xmlns] .flexslider .slides{display:block}
 .flex-direction-nav .flex-next{opacity:1;right:10px}
 }.widget{margin:0 0 1.5em}
 .widget select{max-width:100%}
-div{-ms-hyphens:auto;-moz-hyphens:auto;-webkit-hyphens:auto;hyphens:auto}
+div{overflow-wrap:keep-word;word-wrap:keep-word;-ms-word-break:keep-all;word-break:keep-all;word-break:keep-word;-ms-hyphens:none;-moz-hyphens:none;-webkit-hyphens:none;hyphens:none}
 .clear{clear:both}
 .wrapper{width:100%;margin:0 auto;padding:20px}
 @media screen and (min-width:600px){.wrapper{width:100%}
 }@media screen and (min-width:1200px){.wrapper{width:90%;padding:0}
 }#page{width:100%;float:left;background-image:url(images/summit-room.jpg);background-repeat:no-repeat}
-@media screen and (min-width:600px){#page{background-size:cover}
+@media screen and (min-width:600px){#page{background-size:contain}
 }.site-content{width:100%;float:left}
 .page-contents{background-color:#fff;overflow:hidden;margin:0;width:100%;float:left;text-align:left;padding-bottom:80px}
 .homepage{min-height:500px}

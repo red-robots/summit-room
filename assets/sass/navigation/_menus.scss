@@ -5,8 +5,17 @@
 	width: 100%;
 	text-align: center;
 	margin: 20px 0;
-	@media screen and (min-width: $deskwidth) {
+	@media screen and (min-width: $tabwidth) {
+		width: 91%;
+	}
+	@media screen and (min-width: $midwidth) {
 		width: 92%;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 94%;
+	}
+	@media screen and (min-width: $largewidth) {
+		width: 94%;
 	}
 
 	ul {
