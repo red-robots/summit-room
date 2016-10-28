@@ -15,5 +15,11 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php the_content(); ?>
+		<?php 
+
+		the_content(); 
+
+		if(is_page('sitemap')) {wp_nav_menu( array( 'theme_location' => 'sitemap' ) );}
+
+		?>
 </article><!-- #post-## -->
