@@ -18,6 +18,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+<script src="https://use.fontawesome.com/762c66dd2b.js"></script>
 
 <?php wp_head(); 
 
