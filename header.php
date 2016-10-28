@@ -20,6 +20,13 @@
 <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
 <script src="https://use.fontawesome.com/762c66dd2b.js"></script>
 
+<link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_url'); ?>/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="<?php bloginfo('template_url'); ?>/images/favicons/manifest.json">
+<link rel="mask-icon" href="<?php bloginfo('template_url'); ?>/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
 <?php wp_head(); 
 
 $phone = get_field('phone', 'option');
