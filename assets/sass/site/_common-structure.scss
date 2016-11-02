@@ -163,7 +163,7 @@ footer.site-footer {
 	background-color: $color-dark-gray;
 	position: relative;
 	float: left;
-	padding: 40px 0;
+	padding: 80px 0;
 	color: #fff;
 	a {
 		color: #fff;
@@ -204,6 +204,13 @@ footer.site-footer {
 		float: left;
 		margin: 0 0 20px 0;
 		font-size: 21px;
+
+		@media screen and (min-width: $tabwidth) {
+			font-size: 16px;
+		}
+		@media screen and (min-width: $deskwidth) {
+			font-size: 21px;
+		}
 	}
 	a {
 		color: #fff;
@@ -350,6 +357,13 @@ footer.site-footer {
 			width: 70%;
 			float: left;
 		}
+		img {
+			transform: scale(1);
+			@include transition(all ease .3s);
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
 	}
 
 }
@@ -483,7 +497,7 @@ section.header-info {
 	width: 90%;
 	@media screen and (min-width: $tabwidth) {
 		width: 60%;
-		margin: -120px auto 50px auto;
+		margin: -180px auto 80px auto;
 	}
 	@media screen and (min-width: $deskwidth) {
 		width: 40%;
