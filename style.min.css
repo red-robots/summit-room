@@ -863,7 +863,7 @@ section.header-info{width:100%;position:relative;text-align:center;margin:20px a
 .site-footer .creds{color:#545759;width:100%;margin:30px 0 10px 0;float:left;text-align:center;font-size:16px;font-font-family:"News Cycle",sans-serif}
 .site-footer .creds a{color:#545759;text-decoration:none;-webkit-transition:all ease .3s;transition:all ease .3s}
 .site-footer .creds a:hover{color:#fff}
-article.hentry{padding-bottom:80px}
+article.hentry{padding-bottom:80px;overflow:hidden}
 @media screen and (min-width:1200px){article.hentry{width:70%;margin:0 auto}
 }.menu-article{padding-bottom:80px;text-align:center}
 .wp-caption{width:auto !important;position:relative}
