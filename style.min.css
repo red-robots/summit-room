@@ -881,7 +881,7 @@ section.hero .hero-text{color:#fff;width:90%;margin:10% auto 30% auto;text-align
 }.smenu-item{width:90%;display:inline-block;margin:20px auto;position:relative}
 @media screen and (min-width:600px){.smenu-item{width:40%;margin:2%}
 }@media screen and (min-width:1200px){.smenu-item{width:20%}
-}.smenu-item .menu-image{width:100%;border-left:1px solid #eee;border-bottom:1px solid #eee;border-right:1px solid #eee;float:left;line-height:0}
+}.smenu-item .menu-image{width:100%;float:left;line-height:0}
 .smenu-item .menu-image img{width:100%}
 .menu-top-button{width:100%;float:left;padding:20px 0}
 .menu-top-button-page{width:auto;padding:20px 0}
