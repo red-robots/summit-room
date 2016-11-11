@@ -65,7 +65,7 @@ $sitename = get_bloginfo('name');
 					<h3>CONTACT</h3>
 					<?php echo '(p) ' . $phone; ?>
 					<br>
-					<?php echo '(e) <a href="'. $spam . '">' . $spam . '</a>'; ?>
+					<?php echo '(e) <a href="mailto:'. $spam . '">' . $spam . '</a>'; ?>
 				</div>
 				<div class="item">
 					<div class="social social-footer">
@@ -73,7 +73,7 @@ $sitename = get_bloginfo('name');
 							<i class="fa fa-facebook" aria-hidden="true"><a href="<?php echo $facebook; ?>"></a></i>
 						</li>
 						<li class="facebook">
-							<i class="fa fa-instagram" aria-hidden="true"><a href="<?php echo $instgram; ?>"></a></i>
+							<i class="fa fa-instagram" aria-hidden="true"><a href="<?php echo $instagram; ?>"></a></i>
 						</li>
 						<li class="facebook">
 							<i class="fa fa-twitter" aria-hidden="true"><a href="<?php echo $twitter; ?>"></a></i>
