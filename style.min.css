@@ -837,9 +837,9 @@ footer.site-footer a{color:#fff}
 .rollover img:hover{-webkit-filter:none;filter:none}
 section.header-info{width:100%;position:relative;text-align:center;margin:20px auto}
 @media screen and (min-width:600px){section.header-info{width:auto;display:inline-block;float:right;margin:20px 20px 0 0}
-}.phone{width:100%;text-align:center;font-size:24px;font-weight:300;color:#fff}
-@media screen and (min-width:600px){.phone{width:auto;float:right;margin-right:10px}
-}.phone a{color:#fff;text-decoration:none}
+}.srphone{width:100%;text-align:center;font-size:24px;font-weight:300;color:#fff}
+@media screen and (min-width:600px){.srphone{width:auto;float:right;margin-right:10px}
+}.srphone a{color:#fff;text-decoration:none}
 .social{text-align:center}
 .social ul{margin:0;padding:0}
 .social li{width:30px;height:30px;display:inline-block;margin:0 3px 0 3px;padding:0}

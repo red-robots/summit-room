@@ -61,7 +61,7 @@ $facebook = get_field('facebook_link', 'option');
 				</ul>
 			</div>
 
-			<div class="phone"><?php echo $phone; ?></div>
+			<div class="srphone"><?php echo $phone; ?></div>
 
 		</div>
 	</section>
