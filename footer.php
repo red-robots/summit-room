@@ -95,7 +95,7 @@ $sitename = get_bloginfo('name');
 				<img src="<?php bloginfo('template_url');?>/images/swoosh.png">
 			</div>
 
-			<section class="foot-col group-start">
+			<!-- <section class="foot-col group-start">
 				
 				<div class="img-center">
 					<h3 class="center">A PART OF</h3>
@@ -103,10 +103,17 @@ $sitename = get_bloginfo('name');
 						<a href="<?php echo $treehouse_kitchen_link; ?>">
 							<img alt="Tree House Kitchen" title="Tree House Kitchen" src="<?php bloginfo('template_url'); ?>/images/tree-house-kitchen.png">
 						</a>
-					</div><!-- roll over -->
+					</div>
 				</div>
-			</section>
+			</section> -->
 			<div class="group-item ">
+				<div class="img-mayo rollover">
+					<a href="<?php echo $mayobird_link; ?>">
+						<img alt="Mayobird" title="Mayobird" src="<?php bloginfo('template_url'); ?>/images/mayobird.png">
+					</a>
+				</div>
+			</div>
+			<!-- <div class="group-item ">
 				<div class="img-joe rollover">
 					<a href="<?php echo $joe_nosh_link; ?>">
 						<img alt="Joe and Nosh" title="Joe and Nosh" src="<?php bloginfo('template_url'); ?>/images/joe-and-nosh.png">
@@ -119,14 +126,8 @@ $sitename = get_bloginfo('name');
 						<img alt="Packhouse" title="Packhouse" src="<?php bloginfo('template_url'); ?>/images/packhouse.png">
 					</a>
 				</div>
-			</div>
-			<div class="group-item ">
-				<div class="img-mayo rollover">
-					<a href="<?php echo $mayobird_link; ?>">
-						<img alt="Mayobird" title="Mayobird" src="<?php bloginfo('template_url'); ?>/images/mayobird.png">
-					</a>
-				</div>
-			</div>
+			</div> -->
+			
 			
 		</div><!-- wrapper -->
 
